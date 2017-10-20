@@ -1,3 +1,4 @@
+<?php include '../controllers/UserFunctions.php'; ?>
 <html lang="en">
 <head>
 <meta charset="utf-8">
