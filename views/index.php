@@ -25,7 +25,7 @@
 
 <body>
 <div id="main-wrapper"> 
-  
+  <?php if(isset($_SESSION['username'])): ?>
   <!-- Top Toolbar -->
   <div class="toolbar">
     <div class="uou-block-1a blog">
@@ -80,7 +80,7 @@
     </div>
     <!-- end .uou-block-2b --> 
   </div>
-  
+  <?php endif; ?>
   <!-- HOME PRO-->
   <div class="home-pro"> 
     

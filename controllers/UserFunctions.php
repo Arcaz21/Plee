@@ -13,6 +13,9 @@
 	if(isset($_REQUEST['submit']) && $_REQUEST['submit'] == "submit"){
 		$db->addUser($data);
 	}
+	if(isset($_REQUEST['login']) && $_REQUEST['login'] == 'Login'){
+		
+	}
 
-	print_r($data);
+	// print_r($data);
 ?>
