@@ -1,6 +1,6 @@
 <?php include "../models/DBConnect.php";
 	
-class UserModels extends DBConnect {
+class adminsModel extends DBConnect {
 //-----------Add---------------------------   
 	function addUser($data){
 		$query = "INSERT INTO users(fname,email,phone,pass) 
@@ -11,12 +11,7 @@ class UserModels extends DBConnect {
 
 				$result = mysqli_query($this->conn, $query);
 				if ($result){
-					echo "Data succesfully Added";
-					echo "
-						<script>
-							window.location.href = \"index.php\";
-						</script>	
-					";
+					return TRUE;
 				}else {
 					die("<strong>WARNING:</strong><br>" . mysqli_error($this->conn));
 				}
@@ -25,6 +20,7 @@ class UserModels extends DBConnect {
 	function checkLogin($data){
 		$query = "SELECT * from users 
 		WHERE email = \"".$data['email']."\" && pass = \"".$data['pass']."\" ";
+		print_r($query);
 		$result = mysqli_query($this->conn, $query);
             $res = array();
                 while ($row = mysqli_fetch_array($result)){
@@ -34,7 +30,7 @@ class UserModels extends DBConnect {
 	}
 //-----------VIEW---------------------------  
 	function showUser($data){
-		$query ="SELECT user_id, fname, email, phone, pass FROM users WHERE email = \"".$data."\"";
+		$query ="SELECT user_id, fname, email, phone, pass FROM users WHERE email = \"".$data['email']."\"";
 		$result = mysqli_query($this->conn, $query);
 		$data = $result->fetch_object();
         return $data;

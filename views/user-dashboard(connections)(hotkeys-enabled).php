@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>TIGER - Social Network HTML Template</title>
+<title>Plee - Social Event Site</title>
 
 <!-- Fonts Online -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
@@ -65,22 +65,22 @@
       <div class="container"> <a href="#" class="logo"><img src="images/logo.png" alt=""></a> <a href="#" class="mobile-sidebar-button mobile-sidebar-toggle"><span></span></a>
         <nav class="nav">
           <ul class="sf-menu">
-            <li><a href="index.html"><i class="fa  fa-home"></i></a></li>
-            <li> <a href="listing-filter.html">Professionals</a> </li>
-            <li class="active"> <a href="index.html">Pages</a>
+            <li><a href="index.php"><i class="fa  fa-home"></i></a></li>
+            <li> <a href="listing-filter.php">Professionals</a> </li>
+            <li class="active"> <a href="index.php">Pages</a>
               <ul>
-                <li><a href="profile_company.html">Profile Company</a></li>
-                <li><a href="profile_company-no-tabs.html">Profile Company No Tabs</a></li>
-                <li><a href="user-dashboard(connections)(hotkeys-disabled).html">User Dashboard 1</a></li>
-                <li><a href="user-dashboard(connections)(hotkeys-enabled).html">User Dashboard 2</a></li>
-                <li><a href="user-dashboard(followers).html">User Dashboard 3</a></li>
-                <li><a href="user-dashboard(following).html">User Dashboard 4</a></li>
-                <li><a href="blog-post.html">Blog Post</a></li>                
+                <li><a href="profile_company.php">Profile Company</a></li>
+                <li><a href="profile_company-no-tabs.php">Profile Company No Tabs</a></li>
+                <li><a href="user-dashboard(connections)(hotkeys-disabled).php">User Dashboard 1</a></li>
+                <li><a href="user-dashboard(connections)(hotkeys-enabled).php">User Dashboard 2</a></li>
+                <li><a href="user-dashboard(followers).php">User Dashboard 3</a></li>
+                <li><a href="user-dashboard(following).php">User Dashboard 4</a></li>
+                <li><a href="blog-post.php">Blog Post</a></li>                
               </ul>
             </li>
-            <li> <a href="user-profile(layout-1).html">User Profile</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="gui-kit.html">GUI KIT</a></li>
+            <li> <a href="user-profile(layout-1).php">User Profile</a></li>
+            <li><a href="blog.php">Blog</a></li>
+           
           </ul>
         </nav>
       </div>
@@ -88,8 +88,9 @@
     <!-- end .uou-block-2b --> 
   </div>
   <!-- end .uou-block-2b -->
+  
 
-  <!-- SUB Banner -->
+<!-- SUB Banner -->
   <div class="profile-bnr sub-bnr user-profile-bnr">
     <div class="position-center-center">
       <div class="container">
@@ -100,6 +101,7 @@
   
 
   <!-- Compny Profile -->
+
   <div class="compny-profile"> 
     
     <!-- Profile Company Content -->
@@ -149,8 +151,8 @@
               
               <!-- Nav Tabs -->
               <ul class="nav nav-tabs">
-                <li><a data-toggle="tab" href="#connec">Connections (202)</a></li>
-                <li class="active"><a data-toggle="tab" href="#flow">Followers (23)</a></li>
+                <li  class="active"><a data-toggle="tab" href="#connec">Connections (202)</a></li>
+                <li><a data-toggle="tab" href="#flow">Followers (23)</a></li>
                 <li><a data-toggle="tab" href="#flowing">Following (100)</a></li>
               </ul>
               
@@ -158,7 +160,7 @@
               <div class="tab-content"> 
                 
                 <!-- Connections -->
-                <div id="connec" class="tab-pane fade">
+                <div id="connec" class="tab-pane fade in active">
                   <div class="net-work-in"> 
                     
                     <!-- Filter -->
@@ -191,8 +193,8 @@
                       <div class="head">
                         <div class="row">
                           <div class="col-sm-8">
-                            <button disabled><i class="fa fa-user-plus"></i>Follow</button>
-                            <button disabled><i class="fa fa-trash"></i>Delete</button>
+                            <button><i class="fa fa-user-plus"></i>Follow</button>
+                            <button><i class="fa fa-trash"></i>Delete</button>
                           </div>
                           <div class="col-sm-4">
                             <form>
@@ -223,8 +225,8 @@
                               <div class="col-xs-4"> 
                                 <!-- Check Box -->
                                 <div class="checkbox">
-                                  <input id="checkbox1" class="styled" type="checkbox">
-                                  <label for="checkbox1"></label>
+                                  <input id="checkbox1-1" class="styled" type="checkbox">
+                                  <label for="checkbox1-1"></label>
                                 </div>
                                 <!-- Name -->
                                 <div class="fol-name">
@@ -248,8 +250,8 @@
                               <div class="col-xs-4"> 
                                 <!-- Check Box -->
                                 <div class="checkbox">
-                                  <input id="checkbox2" class="styled" type="checkbox">
-                                  <label for="checkbox2"></label>
+                                  <input id="checkbox1-2" class="styled" type="checkbox">
+                                  <label for="checkbox1-2"></label>
                                 </div>
                                 <!-- Name -->
                                 <div class="fol-name">
@@ -273,8 +275,8 @@
                               <div class="col-xs-4"> 
                                 <!-- Check Box -->
                                 <div class="checkbox">
-                                  <input id="checkbox3" class="styled" type="checkbox">
-                                  <label for="checkbox3"></label>
+                                  <input id="checkbox1-3" class="styled" type="checkbox">
+                                  <label for="checkbox1-3"></label>
                                 </div>
                                 <!-- Name -->
                                 <div class="fol-name">
@@ -298,8 +300,8 @@
                               <div class="col-xs-4"> 
                                 <!-- Check Box -->
                                 <div class="checkbox">
-                                  <input id="checkbox4" class="styled" type="checkbox">
-                                  <label for="checkbox4"></label>
+                                  <input id="checkbox1-4" class="styled" type="checkbox">
+                                  <label for="checkbox1-4"></label>
                                 </div>
                                 <!-- Name -->
                                 <div class="fol-name">
@@ -323,8 +325,8 @@
                               <div class="col-xs-4"> 
                                 <!-- Check Box -->
                                 <div class="checkbox">
-                                  <input id="checkbox5" class="styled" type="checkbox">
-                                  <label for="checkbox5"></label>
+                                  <input id="checkbox1-5" class="styled" type="checkbox">
+                                  <label for="checkbox1-5"></label>
                                 </div>
                                 <!-- Name -->
                                 <div class="fol-name">
@@ -348,8 +350,8 @@
                               <div class="col-xs-4"> 
                                 <!-- Check Box -->
                                 <div class="checkbox">
-                                  <input id="checkbox6" class="styled" type="checkbox">
-                                  <label for="checkbox6"></label>
+                                  <input id="checkbox1-6" class="styled" type="checkbox">
+                                  <label for="checkbox1-6"></label>
                                 </div>
                                 <!-- Name -->
                                 <div class="fol-name">
@@ -373,8 +375,8 @@
                               <div class="col-xs-4"> 
                                 <!-- Check Box -->
                                 <div class="checkbox">
-                                  <input id="checkbox7" class="styled" type="checkbox">
-                                  <label for="checkbox7"></label>
+                                  <input id="checkbox1-7" class="styled" type="checkbox">
+                                  <label for="checkbox1-7"></label>
                                 </div>
                                 <!-- Name -->
                                 <div class="fol-name">
@@ -397,7 +399,7 @@
                 </div>
                 
                 <!-- Followers -->
-                <div id="flow" class="tab-pane fade in active">
+                <div id="flow" class="tab-pane fade">
                   <div class="net-work-in"> 
                     
                     <!-- Filter -->
@@ -637,7 +639,7 @@
                 
                 <!-- Following -->
                 <div id="flowing" class="tab-pane fade">
-                  <div class="net-work-in"> 
+                <div class="net-work-in"> 
                     
                     <!-- Filter -->
                     <div class="filter-flower">
@@ -669,8 +671,8 @@
                       <div class="head">
                         <div class="row">
                           <div class="col-sm-8">
-                            <button><i class="fa fa-user-times"></i>UnFollow</button>
-                            <button><i class="fa fa-users"></i>Connect</button>
+                            <button disabled><i class="fa fa-user-plus"></i>Follow</button>
+                            <button disabled><i class="fa fa-trash"></i>Delete</button>
                           </div>
                           <div class="col-sm-4">
                             <form>
@@ -872,7 +874,8 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                
+                 </div>
               </div>
             </div>
           </div>
@@ -934,7 +937,7 @@
       <li><a href="#">Privacy Policy</a></li>
       <li><a href="#">Terms &amp; Conditions</a></li>
     </ul>
-    <p>Copyright &copy; 2015 <a href="#">UOUAPPS</a>. All Rights reserved.</p>
+    <p>Copyright &copy; 2018 <a href="#">Arcaz Suarez</a>. All Rights reserved.</p>
   </div>
 </div>
 <!-- end .uou-block-4a -->
@@ -944,18 +947,18 @@
   <a href="#" class="mobile-sidebar-close">&times;</a>
   <nav class="main-nav">
     <ul>
-      <li><a href="index.html">Index</a></li>
-      <li> <a href="listing-filter.html">Professionals</a> </li>
-      <li><a href="profile_company.html">Profile Company</a></li>
-      <li><a href="profile_company-no-tabs.html">Profile Company No Tabs</a></li>
-      <li><a href="user-dashboard(connections)(hotkeys-disabled).html">User Dashboard 1</a></li>
-      <li><a href="user-dashboard(connections)(hotkeys-enabled).html">User Dashboard 2</a></li>
-      <li class="active"><a href="user-dashboard(followers).html">User Dashboard 3</a></li>
-      <li><a href="user-dashboard(following).html">User Dashboard 4</a></li>
-      <li><a href="blog-post.html">Blog Post</a></li>
-      <li> <a href="user-profile(layout-1).html">User Profile</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="gui-kit.html">GUI KIT</a></li>
+      <li><a href="index.php">Index</a></li>
+      <li> <a href="listing-filter.php">Professionals</a> </li>
+      <li><a href="profile_company.php">Profile Company</a></li>
+      <li><a href="profile_company-no-tabs.php">Profile Company No Tabs</a></li>
+      <li><a href="user-dashboard(connections)(hotkeys-disabled).php">User Dashboard 1</a></li>
+      <li class="active"><a href="user-dashboard(connections)(hotkeys-enabled).php">User Dashboard 2</a></li>
+      <li><a href="user-dashboard(followers).php">User Dashboard 3</a></li>
+      <li><a href="user-dashboard(following).php">User Dashboard 4</a></li>
+      <li><a href="blog-post.php">Blog Post</a></li>
+      <li> <a href="user-profile(layout-1).php">User Profile</a></li>
+      <li><a href="blog.php">Blog</a></li>
+     
     </ul>
   </nav>
   <hr>

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Plee - Social Network For Events</title>
+<title>Plee - Social Event Site</title>
 
 <!-- Fonts Online -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
@@ -24,7 +24,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-
 <body>
 <div id="main-wrapper"> 
   
@@ -65,22 +64,22 @@
       <div class="container"> <a href="#" class="logo"><img src="images/logo.png" alt=""></a> <a href="#" class="mobile-sidebar-button mobile-sidebar-toggle"><span></span></a>
         <nav class="nav">
           <ul class="sf-menu">
-            <li><a href="index.html"><i class="fa  fa-home"></i></a></li>
-            <li> <a href="listing-filter.html">Professionals</a> </li>
-            <li class="active"> <a href="index.html">Pages</a>
+            <li><a href="index.php"><i class="fa  fa-home"></i></a></li>
+            <li> <a href="listing-filter.php">Professionals</a> </li>
+            <li class="active"> <a href="index.php">Pages</a>
               <ul>
-                <li><a href="profile_company.html">Profile Company</a></li>
-                <li><a href="profile_company-no-tabs.html">Profile Company No Tabs</a></li>
-                <li><a href="user-dashboard(connections)(hotkeys-disabled).html">User Dashboard 1</a></li>
-                <li><a href="user-dashboard(connections)(hotkeys-enabled).html">User Dashboard 2</a></li>
-                <li><a href="user-dashboard(followers).html">User Dashboard 3</a></li>
-                <li><a href="user-dashboard(following).html">User Dashboard 4</a></li>
-                <li><a href="blog-post.html">Blog Post</a></li>                
+                <li><a href="profile_company.php">Profile Company</a></li>
+                <li><a href="profile_company-no-tabs.php">Profile Company No Tabs</a></li>
+                <li><a href="user-dashboard(connections)(hotkeys-disabled).php">User Dashboard 1</a></li>
+                <li><a href="user-dashboard(connections)(hotkeys-enabled).php">User Dashboard 2</a></li>
+                <li><a href="user-dashboard(followers).php">User Dashboard 3</a></li>
+                <li><a href="user-dashboard(following).php">User Dashboard 4</a></li>
+                <li><a href="blog-post.php">Blog Post</a></li>                
               </ul>
             </li>
-            <li> <a href="user-profile(layout-1).html">User Profile</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="gui-kit.html">GUI KIT</a></li>
+            <li> <a href="user-profile(layout-1).php">User Profile</a></li>
+            <li><a href="blog.php">Blog</a></li>
+           
           </ul>
         </nav>
       </div>
@@ -172,18 +171,9 @@
     </div>
     
     <!-- Profile Company Content -->
-    <div class="profile-company-content main-user" data-bg-color="f5f5f5">
+    <div class="profile-company-content" data-bg-color="f5f5f5">
       <div class="container">
         <div class="row"> 
-          
-          <!-- Nav Tabs -->
-          <div class="col-md-12 ">
-            <ul class="nav nav-tabs">
-              <li class="active"><a data-toggle="tab" href="#profile">Profile</a></li>
-              <li><a data-toggle="tab" href="#jobs">Jobs</a></li>
-              <li><a data-toggle="tab" href="#contact">Contact</a></li>
-            </ul>
-          </div>
           
           <!-- SIDE BAR -->
           <div class="col-md-4"> 
@@ -267,15 +257,13 @@
                 <div class="profile-main">
                   <h3>About the Company</h3>
                   <div class="profile-in">
+                    <div class="image-part"> <img src="images/profile-img.jpg" alt="" > </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, maxime, excepturi, mollitia, voluptatibus 
                       similique aliquidautem laudantium sapiente ad enim ipsa modi labo rum accusantium deleniti neque. </p>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, nihil, dolores, culpa ullam vero ipsum placeat 
                       accusamus nemoitate id molestiae consectetur quae pariatur repudi andae vel ex quaerat nam iusto aliquid 
                       laborum quia adipisci aut ut imcati nisi deleniti tempore maxime sequi fugit reiciendis libero quo. Rerum
                       assumenda.</p>
-                    
-                    <!-- Video -->
-                    <iframe src="https://www.youtube.com/embed/uVju5--RqtY"></iframe>
                   </div>
                 </div>
                 
@@ -317,128 +305,6 @@
                           labo rum accusantium deleniti neque.</p>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Jobs -->
-              <div id="jobs" class="tab-pane fade">
-                <div class="header-listing">
-                  <h6>Sort by</h6>
-                  <div class="custom-select-box">
-                    <select name="order" class="custom-select">
-                      <option value="0">Most popular</option>
-                      <option value="1">The latest</option>
-                      <option value="2">The best rating</option>
-                    </select>
-                  </div>
-                  <ul class="listing-views">
-                    <li class="active"><a href="#"><i class="fa fa-list"></i></a></li>
-                    <li><a href="#"><i class="fa fa-th"></i></a></li>
-                    <li><a href="#"><i class="fa fa-th-large"></i></a></li>
-                  </ul>
-                </div>
-                <div class="listing listing-1">
-                  <div class="listing-section">
-                    <div class="listing-ver-3">
-                      <div class="listing-heading">
-                        <h5>Front-End Web Developer</h5>
-                        <ul class="bookmark list-inline">
-                          <li><a href="#"><i class="fa fa-bookmark"></i></a></li>
-                          <li><a href="#"><i class="fa fa-eye"></i></a></li>
-                          <li><a href="#"><i class="fa fa-share"></i></a></li>
-                        </ul>
-                      </div>
-                      <div class="listing-inner">
-                        <div class="listing-content">
-                          <h6 class="title-company">Mars Planet Telecommunications Inc.</h6>
-                          <span class="location"> <i class="fa fa-map-marker"></i> Manhattan, New york, USA </span> <span class="type-work full-time"> Full Time </span>
-                          <p>Proin gravida nibh vel velit auctor aliquet aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio pellentesque habitant morbi tristique senectus et netus et malesuada. <a href="single_job.html">read more</a></p>
-                          <h6 class="title-tags">Skills required:</h6>
-                          <ul class="tags list-inline">
-                            <li><a href="#">Javascript</a></li>
-                            <li><a href="#">Wordpress</a></li>
-                            <li><a href="#">Presta</a></li>
-                            <li><a href="#">Sass</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="listing-tabs">
-                        <ul>
-                          <li><a href="#"><i class="fa fa-envelope"></i> email@mail.com</a></li>
-                          <li><a href="#"><i class="fa fa-phone"></i> 012 345 678</a></li>
-                          <li><a href="#"><i class="fa fa-globe"></i> www.webstite.com</a></li>
-                          <li class="share-button"> <a href="#"><i class="fa fa-share"></i> Share</a>
-                            <div class="contact-share">
-                              <ul>
-                                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                              </ul>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="listing-ver-3">
-                      <div class="listing-heading">
-                        <h5>Front-End Web Developer</h5>
-                        <ul class="bookmark list-inline">
-                          <li><a href="#"><i class="fa fa-bookmark"></i></a></li>
-                          <li><a href="#"><i class="fa fa-eye"></i></a></li>
-                          <li><a href="#"><i class="fa fa-share"></i></a></li>
-                        </ul>
-                      </div>
-                      <div class="listing-inner">
-                        <div class="listing-content">
-                          <h6 class="title-company">Mars Planet Telecommunications Inc.</h6>
-                          <span class="location"> <i class="fa fa-map-marker"></i> Manhattan, New york, USA </span> <span class="type-work full-time"> Full Time </span>
-                          <p>Proin gravida nibh vel velit auctor aliquet aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio pellentesque habitant morbi tristique senectus et netus et malesuada. <a href="single_job.html">read more</a></p>
-                          <h6 class="title-tags">Skills required:</h6>
-                          <ul class="tags list-inline">
-                            <li><a href="#">Javascript</a></li>
-                            <li><a href="#">Wordpress</a></li>
-                            <li><a href="#">Presta</a></li>
-                            <li><a href="#">Sass</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="listing-tabs">
-                        <ul>
-                          <li><a href="#"><i class="fa fa-envelope"></i> email@mail.com</a></li>
-                          <li><a href="#"><i class="fa fa-phone"></i> 012 345 678</a></li>
-                          <li><a href="#"><i class="fa fa-globe"></i> www.webstite.com</a></li>
-                          <li class="share-button"> <a href="#"><i class="fa fa-share"></i> Share</a>
-                            <div class="contact-share">
-                              <ul>
-                                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                              </ul>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Contact -->
-              <div id="contact" class="tab-pane fade">
-                <div class="profile-main">
-                  <h3>Contact the Company</h3>
-                  <div class="profile-in">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quis tenetur velit! Provident eum molestias aperiam suscipit distinctio ipsum cupiditate quasi, dolor sunt, cum reprehenderit quibusdam, repellendus eaque, quas magni.</p>
-                    <form action="#">
-                      <input type="text" placeholder="Name & Surname">
-                      <input type="text" placeholder="E-mail address">
-                      <input type="text" placeholder="Phone Number">
-                      <textarea placeholder="Your Message"></textarea>
-                      <button class="btn btn-primary">Send message</button>
-                    </form>
                   </div>
                 </div>
               </div>
@@ -502,28 +368,29 @@
       <li><a href="#">Privacy Policy</a></li>
       <li><a href="#">Terms &amp; Conditions</a></li>
     </ul>
-    <p>Copyright &copy; 2015 <a href="#">UOUAPPS</a>. All Rights reserved.</p>
+    <p>Copyright &copy; 2018 <a href="#">Arcaz Suarez</a>. All Rights reserved.</p>
   </div>
 </div>
 <!-- end .uou-block-4a --> 
+
 
 <div class="uou-block-11a">
   <h5 class="title">Menu</h5>
   <a href="#" class="mobile-sidebar-close">&times;</a>
   <nav class="main-nav">
     <ul>
-      <li><a href="index.html">Index</a></li>
-      <li><a href="listing-filter.html">Professionals</a> </li>
-      <li class="active"><a href="profile_company.html">Profile Company</a></li>
-      <li><a href="profile_company-no-tabs.html">Profile Company No Tabs</a></li>
-      <li><a href="user-dashboard(connections)(hotkeys-disabled).html">User Dashboard 1</a></li>
-      <li><a href="user-dashboard(connections)(hotkeys-enabled).html">User Dashboard 2</a></li>
-      <li><a href="user-dashboard(followers).html">User Dashboard 3</a></li>
-      <li><a href="user-dashboard(following).html">User Dashboard 4</a></li>
-      <li><a href="blog-post.html">Blog Post</a></li>
-      <li> <a href="user-profile(layout-1).html">User Profile</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="gui-kit.html">GUI KIT</a></li>
+      <li><a href="index.php">Index</a></li>
+      <li> <a href="listing-filter.php">Professionals</a> </li>
+      <li><a href="profile_company.php">Profile Company</a></li>
+      <li  class="active"><a href="profile_company-no-tabs.php">Profile Company No Tabs</a></li>
+      <li><a href="user-dashboard(connections)(hotkeys-disabled).php">User Dashboard 1</a></li>
+      <li><a href="user-dashboard(connections)(hotkeys-enabled).php">User Dashboard 2</a></li>
+      <li><a href="user-dashboard(followers).php">User Dashboard 3</a></li>
+      <li><a href="user-dashboard(following).php">User Dashboard 4</a></li>
+      <li><a href="blog-post.php">Blog Post</a></li>
+      <li> <a href="user-profile(layout-1).php">User Profile</a></li>
+      <li><a href="blog.php">Blog</a></li>
+     
     </ul>
   </nav>
   <hr>

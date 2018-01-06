@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Plee - Social Network For Events</title>
+<title>Plee - Social Event Site</title>
 
 <!-- Fonts Online -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
@@ -64,22 +64,22 @@
       <div class="container"> <a href="#" class="logo"><img src="images/logo.png" alt=""></a> <a href="#" class="mobile-sidebar-button mobile-sidebar-toggle"><span></span></a>
         <nav class="nav">
           <ul class="sf-menu">
-            <li><a href="index.html"><i class="fa  fa-home"></i></a></li>
-            <li class="active"> <a href="listing-filter.html">Professionals</a> </li>
-            <li> <a href="index.html">Pages</a>
+            <li><a href="index.php"><i class="fa  fa-home"></i></a></li>
+            <li class="active"> <a href="listing-filter.php">Professionals</a> </li>
+            <li> <a href="index.php">Pages</a>
               <ul>
-                <li><a href="profile_company.html">Profile Company</a></li>
-                <li><a href="profile_company-no-tabs.html">Profile Company No Tabs</a></li>
-                <li><a href="user-dashboard(connections)(hotkeys-disabled).html">User Dashboard 1</a></li>
-                <li><a href="user-dashboard(connections)(hotkeys-enabled).html">User Dashboard 2</a></li>
-                <li><a href="user-dashboard(followers).html">User Dashboard 3</a></li>
-                <li><a href="user-dashboard(following).html">User Dashboard 4</a></li>
-                <li><a href="blog-post.html">Blog Post</a></li>                
+                <li><a href="profile_company.php">Profile Company</a></li>
+                <li><a href="profile_company-no-tabs.php">Profile Company No Tabs</a></li>
+                <li><a href="user-dashboard(connections)(hotkeys-disabled).php">User Dashboard 1</a></li>
+                <li><a href="user-dashboard(connections)(hotkeys-enabled).php">User Dashboard 2</a></li>
+                <li><a href="user-dashboard(followers).php">User Dashboard 3</a></li>
+                <li><a href="user-dashboard(following).php">User Dashboard 4</a></li>
+                <li><a href="blog-post.php">Blog Post</a></li>                
               </ul>
             </li>
-            <li> <a href="user-profile(layout-1).html">User Profile</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="gui-kit.html">GUI KIT</a></li>
+            <li> <a href="user-profile(layout-1).php">User Profile</a></li>
+            <li><a href="blog.php">Blog</a></li>
+           
           </ul>
         </nav>
       </div>
@@ -241,7 +241,7 @@
       <li><a href="#">Privacy Policy</a></li>
       <li><a href="#">Terms &amp; Conditions</a></li>
     </ul>
-    <p>Copyright &copy; 2015 <a href="#">UOUAPPS</a>. All Rights reserved.</p>
+    <p>Copyright &copy; 2018 <a href="#">Arcaz Suarez</a>. All Rights reserved.</p>
   </div>
 </div>
 <!-- end .uou-block-4a --> 
@@ -251,18 +251,18 @@
   <a href="#" class="mobile-sidebar-close">&times;</a>
   <nav class="main-nav">
     <ul>
-      <li><a href="index.html">Index</a></li>
-      <li class="active"><a href="listing-filter.html">Professionals</a> </li>
-      <li><a href="profile_company.html">Profile Company</a></li>
-      <li><a href="profile_company-no-tabs.html">Profile Company No Tabs</a></li>
-      <li><a href="user-dashboard(connections)(hotkeys-disabled).html">User Dashboard 1</a></li>
-      <li><a href="user-dashboard(connections)(hotkeys-enabled).html">User Dashboard 2</a></li>
-      <li><a href="user-dashboard(followers).html">User Dashboard 3</a></li>
-      <li><a href="user-dashboard(following).html">User Dashboard 4</a></li>
-      <li><a href="blog-post.html">Blog Post</a></li>
-      <li> <a href="user-profile(layout-1).html">User Profile</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="gui-kit.html">GUI KIT</a></li>
+      <li><a href="index.php">Index</a></li>
+      <li class="active"><a href="listing-filter.php">Professionals</a> </li>
+      <li><a href="profile_company.php">Profile Company</a></li>
+      <li><a href="profile_company-no-tabs.php">Profile Company No Tabs</a></li>
+      <li><a href="user-dashboard(connections)(hotkeys-disabled).php">User Dashboard 1</a></li>
+      <li><a href="user-dashboard(connections)(hotkeys-enabled).php">User Dashboard 2</a></li>
+      <li><a href="user-dashboard(followers).php">User Dashboard 3</a></li>
+      <li><a href="user-dashboard(following).php">User Dashboard 4</a></li>
+      <li><a href="blog-post.php">Blog Post</a></li>
+      <li> <a href="user-profile(layout-1).php">User Profile</a></li>
+      <li><a href="blog.php">Blog</a></li>
+     
     </ul>
   </nav>
   <hr>

@@ -1,14 +1,39 @@
-<?php include '../controllers/UserFunctions.php'; ?>
+<?php session_start(); include '../controllers/SignInFunction.php';
+if(isset($_SESSION['username']) && ($_SESSION['password'])){
+    header('Location: user-profile(layout-2).php');
+}else{
+   
+    session_destroy();
+}
+print_r($LOGGED_IN);
+if($LOGGED_IN){
+  $db = new adminsModel();
+  $data = $db->showUser($data);
+  session_start();
+  $_SESSION['username'] = $data->email;
+  $_SESSION['password'] = $data->pass;
+  print_r($_SESSION);
+  header('location:user-profile(layout-1).php');
+}
+if($ERROR){
+  $_SESSION['fail'] = "User does not exist. Please try again.";
+}
+if($REG){
+  $_SESSION['success'] = "You have been registered. Please Login.";
+}
+
+ ?>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Plee - Social Network For Events</title>
+<title>Plee - Social Event Site</title>
 
 <!-- Fonts Online -->
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
 
 <!-- Style Sheet -->
 <link rel="stylesheet" href="css/owl.carousel.css">
@@ -25,7 +50,7 @@
 
 <body>
 <div id="main-wrapper"> 
-  <?php if(isset($_SESSION['username'])): ?>
+  
   <!-- Top Toolbar -->
   <div class="toolbar">
     <div class="uou-block-1a blog">
@@ -36,6 +61,11 @@
             <input type="submit" value="">
           </form>
         </div>
+        <ul class="social">
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-google-plus"></a></li>
+        </ul>
         <ul class="authentication">
           <li><a href="#">Login</a></li>
           <li><a href="#">Register</a></li>
@@ -72,15 +102,15 @@
               </ul>
             </li>
             <li> <a href="user-profile(layout-1).php">User Profile</a></li>
-            <li><a href="blog.php">Events</a></li>
-            <li><a href="gui-kit.php">GUI KIT</a></li>
+            <li><a href="blog.php">Blog</a></li>
+           
           </ul>
         </nav>
       </div>
     </div>
     <!-- end .uou-block-2b --> 
   </div>
-  <?php endif; ?>
+  
   <!-- HOME PRO-->
   <div class="home-pro"> 
     
@@ -93,12 +123,11 @@
           <div class="col-sm-7">
             <div class="text-area">
               <div class="position-center-center col-md-10">
-                <h1> Here comes the social networking platform that will unify events and the people in it. </h1>
-                <h6>Connecting events through a wide network of professional event organizers, DJs, and other event work force. </h6>
+                <h1> Here comes the social networking platform that you’ve been waiting for</h1>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue conseqaut nibbhi ellit ipsum consectetur. </h6>
               </div>
             </div>
           </div>
-          
           <!-- FORM SECTION -->
           <div class="col-sm-5">
             <div class="login-sec"> 
@@ -113,22 +142,21 @@
                 <!-- REGISTER -->
                 <div class="content">
                   <div id="register">
-                    <form>
+                    <form action="<?php $_PHP_SELF ?>" method="POST">
                       <input name="fname" type="text" placeholder="Full Name">
                       <input name="email" type="email" placeholder="Email Address">
                       <input name="phone" type="text" placeholder="Phone">
                       <input name="pass" type="password" placeholder="Password">
-                      <button name="submit" type="submit" value="submit">Register</button>
-                      
+                      <button name="register" type="submit" value="Register">Register</button>
                     </form>
                   </div>
                   
                   <!-- LOGIN -->
                   <div id="log-in" class="active">
-                    <form>
-                      <input type="email" placeholder="Email Address">
-                      <input type="password" placeholder="Password">
-                      <button type="submit">Login</button>
+                    <form action="<?php $_PHP_SELF ?>" method="POST">
+                      <input required="" name="email" type="email" placeholder="Email Address">
+                      <input required="" name="pass" type="password" placeholder="Password">
+                      <button name="login" type="submit" value="Login">Login</button>
                       
                       <div class="forget">Forgot your password? <a href="#.">Click Here</a></div>
                     </form>
@@ -142,11 +170,29 @@
                 </div>
               </div>
             </div>
+
+            <?php if(isset($_SESSION['fail'])): ?>
+            <div class="alert alert-error alert-dismissible" role="alert">
+            <button type="button" class="close">&times;</button>
+            <strong>Oh snap!</strong> <?php echo $_SESSION['fail']; ?>
+            <?php unset($_SESSION['fail']); ?>
+            </div>
+            <?php endif; ?>
+            <?php if(isset($_SESSION['success'])): ?>
+            <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close">&times;</button>
+            <strong>Well Done!</strong> <?php echo $_SESSION['success']; ?>
+            <?php unset($_SESSION['success']); ?>
+            </div>
+            <?php endif; ?>
           </div>
         </div>
       </div>
     </div>
     
+    <!-- SERVICES -->
+    <section class="services"> 
+      
     <!-- SERVICES -->
     <section class="services"> 
       
@@ -157,7 +203,7 @@
         <li class="col-md-4">
           <div class="ser-inn">
           <i class="fa fa-globe"></i>
-            <h4>Stay connected with event organizers</h4>
+            <h4>Stay connected with organizers</h4>
             <i class="fa fa-globe big"></i>
             <p>From freelancer to groups of event workforce stay connected with them for fast and efficient transactions. </p>
           </div>
@@ -373,7 +419,7 @@
       <li><a href="#">Privacy Policy</a></li>
       <li><a href="#">Terms &amp; Conditions</a></li>
     </ul>
-    <p>Copyright &copy; 2015 <a href="#">UOUAPPS</a>. All Rights reserved.</p>
+    <p>Copyright &copy; 2018 <a href="#">Arcaz Suarez</a>. All Rights reserved.</p>
   </div>
 </div>
 <!-- end .uou-block-4a -->
@@ -394,7 +440,7 @@
       <li><a href="blog-post.php">Blog Post</a></li>
       <li> <a href="user-profile(layout-1).php">User Profile</a></li>
       <li><a href="blog.php">Blog</a></li>
-      <li><a href="gui-kit.php">GUI KIT</a></li>
+     
     </ul>
   </nav>
   <hr>
