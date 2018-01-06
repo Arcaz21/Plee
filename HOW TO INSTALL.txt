@@ -1,0 +1,14 @@
+HOW TO INSTALL
+I. Install XAMPP
+	1. Download XAMPP
+	2. Complete Installation
+II. Copy Plee Files
+	1. Download files from GITHUB
+	2. Create Folder "Plee" on C:\xampp\htdocs
+	3. Copy "controllers, models and views" from downloaded files to C:\xampp\htdocs\Plee
+III. Copy Configuration Files
+	1. copy Windows folder to C:/ (Provide administrator rights if prompted)
+	2. copy XAMPP folder to C:/
+IV. Plee
+	1. Open browser and type Plee.com
+	2. Try to Register and to Login
