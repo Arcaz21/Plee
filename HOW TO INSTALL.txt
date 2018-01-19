@@ -17,3 +17,10 @@ IV. Copy Database
 V. Plee
 	1. Open browser and type Plee.com
 	2. Try to Register and to Login
+	
+--UPDATING LATEST FILE---
+1. Right Click and click Git Bash Here on C:\xampp\htdocs\Plee
+2. type command "git pull"
+3. Wait for all the files to be updated to its latest version
+
+NOTE: You can only do this on the computer that have the SSH key of your github account.
