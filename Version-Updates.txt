@@ -1,0 +1,13 @@
+Version 1.0
+
+NEW FEATURES:
+Connection to Database
+Register User
+Login User
+Logout User
+Error Catching on Login
+Basic Security on Login and Registration
+Encryption of data on POST
+
+DESIGN: 
+Default design (no changes yet)
