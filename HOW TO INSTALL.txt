@@ -9,6 +9,11 @@ II. Copy Plee Files
 III. Copy Configuration Files
 	1. copy Windows folder to C:/ (Provide administrator rights if prompted)
 	2. copy XAMPP folder to C:/
-IV. Plee
+IV. Copy Database
+	1. Open localhost/phpmyadmin
+	2. Create new database "plee"
+	3. Import plee.sql from folder to plee database on phpmyadmin
+	4. Click Go wait for the databse to be successfulss
+V. Plee
 	1. Open browser and type Plee.com
 	2. Try to Register and to Login
